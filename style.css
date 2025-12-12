@@ -11,7 +11,7 @@ html {
     flex-direction: column;
     align-items: center;
 
-    font-family: "Barlow Condensed", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -27,42 +27,65 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
 .titles {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
-.regular-text {
-    font-family: "Barlow Condensed", sans-serif;
+.regular-text-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.regular-text-regular {
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .regular-text-medium {
-    font-family: "Barlow Condensed", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
-.regular-text-italic {
-    font-family: "Barlow Condensed", sans-serif;
+.regular-text-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.regular-text-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.regular-text-regular-italic {
+    font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-style: italic;
 }
 
 .regular-text-medium-italic {
-    font-family: "Barlow Condensed", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: italic;
 }
+
+.regular-text-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
 
 ul {
     list-style-type: none;
@@ -86,6 +109,7 @@ header {
     display: grid;
     grid-template-columns: 95% 5%;
     place-items: center;
+    font-size: 0.8rem;
 }
 
 .sign-up-add a {
