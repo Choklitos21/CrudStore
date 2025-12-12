@@ -32,6 +32,12 @@ h1, h2, h3, h4, h5 {
     font-style: normal;
 }
 
+input {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .titles {
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
@@ -86,7 +92,6 @@ h1, h2, h3, h4, h5 {
     font-style: italic;
 }
 
-
 ul {
     list-style-type: none;
 }
@@ -123,3 +128,206 @@ header {
     cursor: pointer;
     margin-right: 100px;
 }
+
+.nav-links {
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 40% 30% 10%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.nav-links div {
+    width: 100%;
+    height: auto;
+}
+
+.nav-links div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.nav-links div:last-child .icon {
+    width: 1.3rem;
+    height: auto;
+}
+
+.nav-links ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    gap: 10px;
+    background-color: rgba(136, 136, 136, 0.13);
+    border-radius: 25px;
+    padding: 11px;
+}
+
+.search-bar img {
+    filter: opacity(0.5);
+}
+
+.search-bar input {
+    border: unset;
+    background-color: unset;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #F0F0F0 88%, white 50%);
+}
+
+.newsletter-container {
+    width: 80%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.newsletter-container h2 {
+    width: 30%;
+    font-size: 2.1rem;
+}
+
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 15%;
+}
+
+.subscribe-container div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: white;
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0 15px;
+}
+
+.subscribe-container div:last-child {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-container div img{
+    filter: opacity(0.5);
+}
+
+.subscribe-container div input {
+    background-color: unset;
+    border: unset;
+}
+
+.bottom-links {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 55px;
+}
+
+.bottom-links p {
+    width: 90%;
+    filter: opacity(0.6);
+}
+
+.social-container {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-container h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.social-container div img{
+    margin: 0 3px;
+}
+
+.bottom-links div ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bottom-links div ul li:first-child {
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+}
+
+.bottom-links div ul li:not(:first-child) {
+    margin-bottom: 17px;
+    font-size: 0.9rem;
+    filter: opacity(0.6);
+}
+
+.copyright-container {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #0000001A;
+}
+
+.copyright-container span {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    filter: opacity(0.5);
+}
+
+.copyright-container img {
+    width: 2.9rem;
+    height: auto;
+}
+
