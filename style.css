@@ -1,0 +1,101 @@
+:root {
+
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.titles {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.regular-text {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.regular-text-medium {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.regular-text-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.regular-text-medium-italic {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.icon {
+    width: 1rem;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+.sign-up-add {
+    width: 100%;
+    height: 28px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    place-items: center;
+}
+
+.sign-up-add a {
+    color: white;
+}
+
+.sign-up-add .icon {
+    filter: invert(1);
+    width: 0.7rem;
+    height: auto;
+    cursor: pointer;
+    margin-right: 100px;
+}
