@@ -222,6 +222,10 @@ ul {
     z-index: 2;
 }
 
+.brands-container img {
+    cursor: pointer;
+}
+
 .brands-container img:nth-child(1) {
     width: 166px;
     height: auto;
@@ -320,4 +324,130 @@ ul {
     padding-left: 20px;
     color: #FF3333;
     cursor: pointer;
+}
+
+.browse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    width: 90%;
+    height: auto;
+    border-radius: 40px;
+}
+
+.browse-container h2 {
+    padding-top: 25px;
+    font-size: 3rem;
+}
+
+.browse-container div {
+    display: grid;
+    grid-template-areas:
+    'casual formal formal'
+    'party party gym';
+    grid-gap: 10px;
+    padding: 30px;
+    width: 80%;
+    height: auto;
+}
+
+.browse-container div img {
+    cursor: pointer;
+}
+
+.browse-container div img:nth-child(1){
+    grid-area: casual;
+}
+
+.browse-container div img:nth-child(2){
+    grid-area: formal;
+}
+
+.browse-container div img:nth-child(3){
+    grid-area: party;
+}
+
+.browse-container div img:nth-child(4){
+    grid-area: gym;
+}
+
+.browse-container div img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ratings-container::-webkit-scrollbar {
+    display: none;
+}
+
+.ratings-container h2 {
+    align-self: flex-start;
+    font-size: 3rem;
+    margin-bottom: 80px;
+    padding-left: 100px;
+}
+
+.ratings-container .opinions-carrousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.opinions-carrousel .opinions-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.opinions-carrousel .opinions-items div {
+    padding: 20px;
+}
+
+.opinions-carrousel .opinions-items h3 {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.opinions-carrousel .opinions-items p {
+    font-size: 0.9rem;
+    filter: opacity(0.6);
+}
+
+.arrows-container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    right: 180px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.arrows-container img:last-child {
+    transform: scaleX(-1);
 }

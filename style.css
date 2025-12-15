@@ -99,6 +99,7 @@ ul {
 .icon {
     width: 1rem;
     height: auto;
+    cursor: pointer;
 }
 
 header {
@@ -174,6 +175,7 @@ header {
     align-items: center;
     width: 100%;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .search-bar {
@@ -288,6 +290,7 @@ header {
 
 .social-container div img{
     margin: 0 3px;
+    cursor: pointer;
 }
 
 .bottom-links div ul {
@@ -306,6 +309,7 @@ header {
     margin-bottom: 17px;
     font-size: 0.9rem;
     filter: opacity(0.6);
+    cursor: pointer;
 }
 
 .copyright-container {
@@ -342,9 +346,11 @@ header {
 
 .pages iframe {
     width: 100%;
-    height: 500vh;
+    height: 470vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
