@@ -1,0 +1,323 @@
+@import url(../../style.css);
+
+:root {
+
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.titles {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.regular-text-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.regular-text-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.regular-text-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.regular-text-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.regular-text-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.regular-text-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.regular-text-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.regular-text-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.icon {
+    width: 1rem;
+    height: auto;
+}
+
+.welcome-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    overflow: clip;
+    background-color: #f2f0f1;
+}
+
+.greeting-container {
+    width: 85%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 150px;
+}
+
+.greeting-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.greeting-info h1 {
+    width: 100%;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+}
+
+.greeting-info p {
+    width: 80%;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    filter: opacity(0.6);
+}
+
+.greeting-info button {
+    background-color: black;
+    color: white;
+    border: unset;
+    width: 200px;
+    height: 50px;
+    border-radius: 62px;
+    cursor: pointer;
+}
+
+.metrics-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 80px;
+}
+
+.metrics-container h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.metrics-container span {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    filter: opacity(0.6);
+}
+
+.greeting-images-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60%;
+}
+
+.greeting-images-container .models-img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: -340px;
+}
+
+.greeting-images-container .star1 {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left:  50px;
+    z-index: 1;
+}
+
+.greeting-images-container .star2 {
+    width: 110px;
+    height: auto;
+    position: absolute;
+    top: -210px;
+    right: 40px;
+}
+
+.brands-container {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+
+.brands-container img:nth-child(1) {
+    width: 166px;
+    height: auto;
+}
+
+.brands-container img:nth-child(2) {
+    width: 91px;
+    height: auto;
+}
+
+.brands-container img:nth-child(3) {
+    width: 156px;
+    height: auto;
+}
+
+.brands-container img:nth-child(4) {
+    width: 194px;
+    height: auto;
+}
+
+.brands-container img:nth-child(5) {
+    width: 206px;
+    height: auto;
+}
+
+.arrivals-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.arrivals-container h2 {
+    font-size: 3rem;
+}
+
+.arrivals-container span {
+    cursor: pointer;
+}
+
+.arrivals-carousel-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.arrivals-carousel-container .carouse-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+}
+
+.arrivals-carousel-container .carouse-item .product-photo {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.arrivals-carousel-container .carouse-item .product-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.arrivals-carousel-container .carouse-item .rating-stars {
+    width: 45%;
+    height: auto;
+}
+
+.arrivals-carousel-container .carouse-item h4,
+.arrivals-carousel-container .carouse-item h3 {
+    margin: 5px 0 10px 0;
+}
+
+.carouse-item .prices-discounted {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.carouse-item .prices-discounted h3:nth-child(2) {
+    text-decoration: line-through;
+    filter: opacity(0.4);
+}
+
+.carouse-item .prices-discounted span {
+    font-size: 0.8rem;
+    padding-left: 20px;
+    color: #FF3333;
+    cursor: pointer;
+}
