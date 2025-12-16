@@ -1,4 +1,5 @@
 @import url(../../style.css);
+@import url(../home-page/home-page-styles.css);
 
 :root {
 
@@ -37,6 +38,12 @@ h1, h2, h3, h4, h5 {
 input {
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
+    font-style: normal;
+}
+
+button {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -101,4 +108,337 @@ ul {
 .icon {
     width: 1rem;
     height: auto;
+}
+
+.rating-views-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+}
+
+.rating-views-container .options-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.rating-views-container .options-buttons button {
+    width: 100%;
+    height: 50px;
+    border: unset;
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: unset;
+}
+
+.rating-views-container .options-buttons button:nth-child(1),
+.rating-views-container .options-buttons button:nth-child(3){
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    filter: opacity(0.6);
+}
+
+.rating-views-container .options-buttons button:nth-child(2) {
+    border-bottom: 2px solid black;
+}
+
+.rating-views-container .reviews-options-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.reviews-options-container span {
+    font-size: 0.9rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    filter: opacity(0.4);
+}
+
+.reviews-options-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.reviews-options-container button:nth-child(1),
+.reviews-options-container button:nth-child(2) {
+    background-color: rgba(240, 240, 240, 1);
+    border: unset;
+    border-radius: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+.reviews-options-container button:nth-child(1) {
+    width: 48px;
+    height: 48px;
+}
+
+.reviews-options-container button:nth-child(1) img {
+    width: 100%;
+    height: auto;
+}
+
+.reviews-options-container button:nth-child(2) {
+    width: 120px;
+    height: 48px;
+}
+
+.reviews-options-container button:nth-child(3) {
+    border: unset;
+    border-radius: 62px;
+    width: 166px;
+    height: 48px;
+    background-color: black;
+    color: white;
+}
+
+.opinions-carrousel-detailed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 50px;
+    gap: 40px;
+}
+
+.product-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.route-labes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.product-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 92%;
+}
+
+.product-info-container .route-labes {
+    align-self: flex-start;
+    color: rgba(0, 0, 0, 0.6);
+    gap: 10px;
+}
+
+.product-info-container .route-labes span:last-child {
+    color: black;
+}
+
+.product-info-carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.product-info-carousel div:nth-child(1){
+    width: 50%;
+    height: auto;
+}
+
+.product-info-carousel div:nth-child(2){
+    width: 50%;
+    height: auto;
+}
+
+.product-info-container .photos-looking {
+    display: grid;
+    grid-template-areas:
+        "front onDisplay onDisplay"
+        "back onDisplay onDisplay"
+        "onModel onDisplay onDisplay";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 167px 167px 167px;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.product-info-container .photos-looking img:nth-child(1) {
+    grid-area: onDisplay;
+}
+
+.product-info-container .photos-looking img:nth-child(2) {
+    grid-area: front;
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.product-info-container .photos-looking img:nth-child(3) {
+    grid-area: back;
+}
+
+.product-info-container .photos-looking img:nth-child(4) {
+    grid-area: onModel;
+}
+
+.product-info-container .photos-looking img {
+    width: 152px;
+    height: 167px;
+    object-fit: cover;
+}
+
+.product-info-container .photos-looking img:first-child {
+    width: 444px;
+    height: 530px;
+}
+
+.products-options-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+}
+
+.products-options-container .opinions-items {
+    width: 90% !important;
+    height: auto;
+}
+
+.products-options-container .opinions-items div:not(:first-child) h4{
+    font-family: "Ubuntu", sans-serif !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 1rem;
+    filter: opacity(0.6);
+    margin: 0 0 10px 0;
+}
+
+.products-options-container .opinions-items p {
+    filter: opacity(0.6);
+    margin-bottom: 50px;
+}
+
+.products-options-container .opinions-items > h3 {
+    width: 100%;
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.products-options-container .opinions-items .carouse-item h3 {
+    font-size: 1.8rem;
+}
+
+.products-options-container .opinions-items .carouse-item span {
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.color-options-container {
+    margin-bottom: 30px;
+}
+
+.color-options-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.color-options-container div img {
+    width: 37px;
+    height: auto;
+}
+
+.sizes-container {
+    margin-bottom: 30px;
+}
+
+.sizes-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.sizes-container div button {
+    width: 108px;
+    height: 42px;
+    background-color: rgba(240, 240, 240, 1);
+    border: unset;
+    border-radius: 62px;
+}
+
+.sizes-container div button:nth-child(3) {
+    background-color: black;
+    color: white;
+}
+
+.quantity-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.quantity-container button {
+    border: unset;
+    border-radius: 62px;
+}
+
+.quantity-container button:first-child {
+    background-color: rgba(240, 240, 240, 1);
+    width: 172px;
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+    gap: 10px;
+}
+
+.quantity-container button:first-child img {
+    width: 24px;
+    height: auto;
+}
+
+.quantity-container button:last-child {
+    width: 400px;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
 }

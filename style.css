@@ -347,6 +347,10 @@ header {
 .pages iframe {
     width: 100%;
     height: 480vh;
+    /*homePage*/
+    /*height: 480vh;*/
+    /*detailedPage*/
+    /*height: 290vh;*/
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
