@@ -1,0 +1,366 @@
+@import url(../../style.css);
+@import url(../home-page/home-page-styles.css);
+@import url(../detailed-page/detailed-page-styles.css);
+
+:root {
+
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+button {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titles {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.regular-text-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.regular-text-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.regular-text-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.regular-text-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.regular-text-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.regular-text-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.regular-text-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.regular-text-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.icon {
+    width: 1rem;
+    height: auto;
+}
+
+.checkout-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.title-section {
+    width: 92%;
+    height: auto;
+    justify-self: flex-start;
+}
+
+hr {
+    width: 100%;
+    margin: 5px 0;
+    filter: opacity(0.5);
+}
+
+.products-cart {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.products-cart div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-cart div > img {
+    width: 20%;
+    height: auto;
+}
+
+.products-cart div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 20px
+}
+
+.products-cart div > div button {
+    width: 126px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: unset;
+    border-radius: 62px;
+}
+
+.products-cart div > div button img:first-child {
+    padding-left: 10px;
+}
+
+.products-cart div > div button img:last-child {
+    padding-right: 10px;
+}
+
+.products-cart div > div h4,
+.products-cart div > div h5 {
+    margin: 5px 0;
+}
+
+.products-cart div > div h5 span {
+    filter: opacity(0.6);
+}
+
+.products-cart div > div h4,
+.products-cart div > div h3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-cart div > div h4 {
+    font-size: 1.2rem;
+}
+.products-cart div > div h3 {
+    font-size: 1.35rem;
+}
+
+.summary-container {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.summary-container > div {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+}
+
+.summary-container div h3 {
+    font-size: 1.5rem;
+    margin: 0 0 15px 0;
+}
+
+.summary-numbers {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.summary-numbers div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-numbers h4 {
+    margin: 10px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    filter: opacity(0.6);
+}
+
+.summary-numbers span {
+    font-size: 1.1rem;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.summary-numbers div:nth-child(2) span {
+    color: rgba(255, 51, 51, 1);
+}
+
+.total-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-container h4 {
+    margin: 10px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.total-container span {
+    font-size: 1.3rem;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.promos-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.promos-container div {
+    width: 326px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border-radius: 62px;
+    padding: 0 15px;
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.promos-container div input {
+    border: unset;
+    background-color: unset;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.promos-container button {
+    width: 119px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: unset;
+    border-radius: 62px;
+    color: white;
+}
+
+.confirm-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    width: 100%;
+    height: 48px;
+    border: unset;
+    border-radius: 62px;
+    background-color: black;
+    color: white;
+}
+
+.confirm-button img {
+    width: 15px;
+    height: 15px;
+    filter: invert(100%);
+}
+
+button {
+    cursor: pointer;
+}
+
+
