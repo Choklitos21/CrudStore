@@ -477,6 +477,10 @@ ul {
     cursor: pointer;
 }
 
+.carouse-item {
+    cursor: pointer;
+}
+
 .carouse-item h3,
 .carouse-item h4 {
     margin: 5px 0;
