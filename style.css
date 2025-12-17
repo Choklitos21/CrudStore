@@ -346,7 +346,9 @@ header {
 
 .pages iframe {
     width: 100%;
-    height: 480vh;
+    height: 300vh;
+    /*category*/
+    /*height: 220vh;*/
     /*homePage*/
     /*height: 480vh;*/
     /*detailedPage*/
